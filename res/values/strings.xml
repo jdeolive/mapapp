@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MapApp</string>
+    
+    <string name="report">Report</string>
+    <string name="err_map_load">Error occurred loading map.</string>
+
+</resources>
