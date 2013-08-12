@@ -7,7 +7,7 @@ Sample application showcasing use of the GeoDroid map view component.
 Building the application from sources requires:
 
 * [Android SDK](http://developer.android.com/sdk/index.html)
-* [Apache Ant](http://ant.apache.org)
+* [Apache Maven](http://maven.apache.org/)
 
 See the [GeoDroid README](https://github.com/jdeolive/geodroid) for more 
 information about setting up the Android SDK.
@@ -20,9 +20,14 @@ Run the ``android`` command to update the project.
 
     android update project -s -p .
 
-Build the apk.
+Change to the ``geodroid`` directory and build it with Maven.
 
-    ant debug
+    cd geodroid
+    mvn install
+
+Change back to the root directory and build the application.
+
+    mvn install
 
 The above should result in a file named ``MapApp-debug.apk`` being 
 created in the ``bin`` directory.
